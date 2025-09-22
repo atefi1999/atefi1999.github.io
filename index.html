@@ -28,7 +28,7 @@
       color: #8b949e;
     }
     section {
-      padding: 30px;
+      padding: 30px 20px;
       max-width: 900px;
       margin: auto;
     }
@@ -36,6 +36,7 @@
       color: #58a6ff;
       border-bottom: 2px solid #30363d;
       padding-bottom: 5px;
+      font-size: 1.5rem;
     }
     ul {
       list-style: none;
@@ -53,7 +54,7 @@
     }
     .projects li {
       background: #161b22;
-      padding: 10px;
+      padding: 12px;
       border-radius: 6px;
     }
     footer {
@@ -63,6 +64,41 @@
       margin-top: 40px;
       font-size: 0.9rem;
       color: #8b949e;
+    }
+
+    /* 📱 ریسپانسیو برای موبایل */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      section {
+        padding: 20px 15px;
+      }
+      h2 {
+        font-size: 1.2rem;
+      }
+      .projects li {
+        font-size: 0.95rem;
+        padding: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.4rem;
+      }
+      header p {
+        font-size: 0.9rem;
+      }
+      h2 {
+        font-size: 1.1rem;
+      }
+      body {
+        font-size: 14px;
+      }
     }
   </style>
 </head>
@@ -107,8 +143,8 @@
 
   <section>
     <h2>📊 GitHub Stats</h2>
-    <p><img src="https://github-readme-stats.vercel.app/api?username=atefi1999&show_icons=true&theme=tokyonight" alt="GitHub Stats"></p>
-    <p><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=atefi1999&layout=compact&theme=tokyonight" alt="Top Languages"></p>
+    <p><img src="https://github-readme-stats.vercel.app/api?username=atefi1999&show_icons=true&theme=tokyonight" alt="GitHub Stats" style="max-width:100%; height:auto;"></p>
+    <p><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=atefi1999&layout=compact&theme=tokyonight" alt="Top Languages" style="max-width:100%; height:auto;"></p>
   </section>
 
   <section>
@@ -121,7 +157,7 @@
   </section>
 
   <footer>
-    🔥 Thanks for visiting my Portfolio Website!
+    🔥 Thanks for visiting my portfolio!
   </footer>
 </body>
 </html>
